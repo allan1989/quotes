@@ -1,9 +1,20 @@
+// Fonts
 
-/*
-    font-family: 'Montserrat', sans-serif;
+$Lato: 'Lato', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
+$GreatLakesNF : 'greatlakesnfregular', sans-serif;
+$Raleway: 'Raleway', sans-serif;
 
-    font-family: 'Raleway', sans-serif;
+// @font-face {
+//   font-family: 'greatLakesNF';
+//   src: url('../../fonts/GreatLakesNF.woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-    font-family: 'Lato', sans-serif;
-
-*/
+@font-face {
+  font-family: 'greatlakesnfregular';
+  src: url('../../fonts/GREALN__-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
