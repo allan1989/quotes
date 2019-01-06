@@ -1,6 +1,7 @@
 // CONFIG
 
 @import './config/fonts';
+@import './config/colors';
 
 // LAYOUT
 
@@ -10,3 +11,7 @@
 
 @import './base/reset';
 @import './base/test';
+
+// MODULES
+
+@import './modules/header';

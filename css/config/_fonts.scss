@@ -1,16 +1,11 @@
 // Fonts
 
+
+// Font Families
 $Lato: 'Lato', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
 $GreatLakesNF : 'greatlakesnfregular', sans-serif;
 $Raleway: 'Raleway', sans-serif;
-
-// @font-face {
-//   font-family: 'greatLakesNF';
-//   src: url('../../fonts/GreatLakesNF.woff');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 @font-face {
   font-family: 'greatlakesnfregular';
@@ -18,3 +13,9 @@ $Raleway: 'Raleway', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
+
+// Font Sizes
+$_16: 16px;
+
+// Font Weights
+$_700: 700;
