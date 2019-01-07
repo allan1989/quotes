@@ -26,23 +26,11 @@
   align-self: self-start;
   text-transform: uppercase;
   &:before{
-    content: '';
-    display: block;
-    background-color: currentColor;
-    height: 3px;
-    width: 98%;
-    position: absolute;
+    @extend %menu-button-borders;
     top: 4px;
-    left: 0;
   }
   &:after{
-    content: '';
-    display: block;
-    height: 3px;
-    width: 98%;
-    background-color: currentColor;
-    position: absolute;
+    @extend %menu-button-borders;
     bottom: -5px;
-    left: 0;
   }
 }
