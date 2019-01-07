@@ -19,18 +19,13 @@
 .site-nav-menu-button{
   color: black;
   font-family: $Montserrat;
-  font-size: .66em;
+  font-size: .60em;
   font-weight: $bold;
-  padding-top: 12px;
-  position: relative;
+  padding: 4px 0;
   align-self: self-start;
   text-transform: uppercase;
-  &:before{
-    @extend %menu-button-borders;
-    top: 4px;
-  }
-  &:after{
-    @extend %menu-button-borders;
-    bottom: -5px;
-  }
+  border-top: 3px solid currentColor;
+  border-bottom: 3px solid currentColor;
+  margin: 4px 4px 0 0;
+  letter-spacing: 1px;
 }
