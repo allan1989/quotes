@@ -17,7 +17,7 @@
 }
 
 .site-nav-menu-button{
-  color: white;
+  color: black;
   font-family: $Montserrat;
   font-size: .66em;
   font-weight: $bold;
@@ -30,7 +30,7 @@
     display: block;
     background-color: currentColor;
     height: 3px;
-    width: 92%;
+    width: 98%;
     position: absolute;
     top: 4px;
     left: 0;
@@ -39,7 +39,7 @@
     content: '';
     display: block;
     height: 3px;
-    width: 92%;
+    width: 98%;
     background-color: currentColor;
     position: absolute;
     bottom: -5px;
