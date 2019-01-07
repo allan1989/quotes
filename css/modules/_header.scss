@@ -17,14 +17,13 @@
 }
 
 .site-nav-menu-button{
-  color: black;
+  color: white;
   font-family: $Montserrat;
   font-size: .66em;
   font-weight: $bold;
   padding-top: 12px;
   position: relative;
   align-self: self-start;
-  text-indent: -3px;
   text-transform: uppercase;
   &:before{
     content: '';
@@ -34,7 +33,7 @@
     width: 92%;
     position: absolute;
     top: 4px;
-    left: -1px;
+    left: 0;
   }
   &:after{
     content: '';
@@ -44,6 +43,6 @@
     background-color: currentColor;
     position: absolute;
     bottom: -5px;
-    left: -1px;
+    left: 0;
   }
 }
