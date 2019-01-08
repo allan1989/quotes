@@ -1,0 +1,30 @@
+// SLIDER
+
+.slider{
+  display: flex;
+  justify-content: space-between;
+  width: 114px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.slider-button{
+  display: inline-block;
+  background-color: $black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.slider-button.active{
+  background-color: $white;
+}
+
+.slider-img{
+  background-image: url('.././../quotes/img/header-slider/pic-0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
