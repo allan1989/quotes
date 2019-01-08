@@ -29,3 +29,22 @@
   margin: 4px 4px 0 0;
   letter-spacing: 1px;
 }
+
+.site-hero{
+  color: $black;
+  font-family: $Raleway;
+  padding-top: 139px;
+  padding-right: 96px;
+  text-align: right;
+}
+
+.site-hero-heading{
+  font-weight: $thin;
+  text-transform: uppercase;
+  font-size: 138px;
+  letter-spacing: 13px;
+}
+
+.site-hero-baseline{
+  font-weight: $bold;
+}
