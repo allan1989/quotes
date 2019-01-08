@@ -22,7 +22,7 @@
   font-size: .60em;
   font-weight: $bold;
   padding: 4px 0;
-  align-self: self-start;
+  align-self: flex-start;
   text-transform: uppercase;
   border-top: 3px solid currentColor;
   border-bottom: 3px solid currentColor;
@@ -38,7 +38,7 @@
 
 .site-hero-heading{
   font-weight: $thin;
-  font-size: 138px;
+  font-size: $_16 * 8.625; //138px
   letter-spacing: 13px;
   padding-top: 139px;
   padding-right: 96px;
@@ -47,14 +47,27 @@
 
 .site-hero-baseline{
   font-weight: $bold;
-  font-size: 38px;
+  font-size: $_16 * 2.375;
   letter-spacing: 4.9px;
   padding-right: 105px;
   text-indent: 17px;
 }
 
+
 @media screen and (max-width: 768px){
   .site-main{
     padding: 32px 20px 0;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .site-hero-heading{
+    font-size: $_16 * 5;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .site-hero-heading{
+    font-size: $_16 * 3;
   }
 }
