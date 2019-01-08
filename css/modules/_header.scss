@@ -33,18 +33,22 @@
 .site-hero{
   color: $black;
   font-family: $Raleway;
-  padding-top: 139px;
-  padding-right: 96px;
   text-align: right;
 }
 
 .site-hero-heading{
   font-weight: $thin;
-  text-transform: uppercase;
   font-size: 138px;
   letter-spacing: 13px;
+  padding-top: 139px;
+  padding-right: 96px;
+  text-transform: uppercase;
 }
 
 .site-hero-baseline{
   font-weight: $bold;
+  font-size: 38px;
+  letter-spacing: 4.9px;
+  padding-right: 105px;
+  text-indent: 17px;
 }
