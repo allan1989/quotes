@@ -1,8 +1,7 @@
 $(document).ready(function(){
   
+  // Header Slider
 
-
-  // Slider
   $('.js-slider-button').on('click', function(){
 
     // DOM elements
@@ -23,5 +22,19 @@ $(document).ready(function(){
     $sliderContent.css('background-image', $newImageUrl);    
   });
 
+
+
+
+  // Main Menu
+  $('.js-site-nav-menu-button').on('click', function(){
+
+    $('.js-site-nav-close-button, .js-site-nav').removeClass('js-hidden');
+  
+  });
+
+  $('.js-site-nav-close-button').on('click', function(){
+    $('.js-site-nav').addClass('js-hidden');
+    $('.js-site-nav-close-button').addClass('js-hidden');
+  });
 
 });
