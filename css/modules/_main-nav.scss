@@ -1,6 +1,20 @@
 // MAIN NAV
 
 .site-nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(34, 34, 34, .2);
+}
+
+.site-nav-list{
+
+}
+
+.site-nav-list-item{
 
 }
 
@@ -12,7 +26,7 @@
 
   position: absolute;
   top: 25px;
-  right: 117px;
+  right: 130px;
 
   text-transform: uppercase;
 
