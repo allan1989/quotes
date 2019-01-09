@@ -1,0 +1,35 @@
+// MAIN NAV
+
+.site-nav{
+
+}
+
+.site-nav-close-button{
+  color: $white;
+  font-family: $Montserrat;
+  font-weight: $bold;
+  font-size: .5em;
+
+  position: absolute;
+  top: 25px;
+  right: 117px;
+
+  text-transform: uppercase;
+
+  &:before{
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    width: 25px;
+    height: 25px;
+    background-image: url('.././../quotes/img/icons/menu-close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .site-nav-close-button{
+    right: 20px;
+  }
+}
