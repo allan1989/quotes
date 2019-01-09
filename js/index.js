@@ -13,9 +13,6 @@ $(document).ready(function(){
     var $target = $sliderContent.css('background-image');
     var $regex = /pic-\d+/;
 
-    // Add active class on first button
-    $('.js-slider-button').first().addClass('active');
-
     // Change active class
     $this.addClass('active');
     $allButtons.removeClass('active');
