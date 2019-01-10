@@ -1,36 +1,43 @@
 // HEADER
 
 .site-main{
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   padding: 32px 120px 0 126px;
-  position: relative;
 }
 
 .site-main-home-link{
   background-color: $black;
   color: $white;
+
+  padding: 1.1em .7em;
+
   font-family: $Montserrat;
   font-weight: $bold;
   font-size: $_16;
   letter-spacing: 5.7px;
-  padding: 1.1em .7em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .site-nav-menu-button{
   color: $white;
+
   font-family: $Montserrat;
   font-size: .60em;
   font-weight: $bold;
-  padding: 4px 0;
-  align-self: flex-start;
+  letter-spacing: 1px;
   text-transform: uppercase;
+
+  align-self: flex-start;
+  margin: 4px 4px 0 0;
+  padding: 4px 0;
+
   border-top: 3px solid currentColor;
   border-bottom: 3px solid currentColor;
-  margin: 4px 4px 0 0;
-  letter-spacing: 1px;
+
   &:hover{
     cursor: pointer;
   }
@@ -38,26 +45,30 @@
 
 .site-hero{
   color: $white;
+
   font-family: $Raleway;
   text-align: right;
+
   padding-bottom: 144px;
 }
 
 .site-hero-heading{
+  font-size: $_16 * 8.625; 
   font-weight: $thin;
-  font-size: $_16 * 8.625; //138px
   letter-spacing: 13px;
+  text-transform: uppercase;
+
   padding-top: 139px;
   padding-right: 96px;
-  text-transform: uppercase;
 }
 
 .site-hero-baseline{
-  font-weight: $bold;
   font-size: $_16 * 2.375;
+  font-weight: $bold;
   letter-spacing: 4.9px;
-  padding-right: 105px;
   text-indent: 17px;
+
+  padding-right: 105px;
 }
 
 
