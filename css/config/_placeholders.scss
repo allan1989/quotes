@@ -1,12 +1,10 @@
 // PLACEHOLDERS
 
-%menu-button-borders{
+%line{
   content: '';
   display: block;
-  height: 3px;
-  width: 98%;
-  background-color: currentColor;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
+  height: 2px;
+  width: 50px;
+  background-color: $black;
+  margin: 26px auto 38px auto;;
 }

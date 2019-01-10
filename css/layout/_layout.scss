@@ -1,7 +1,12 @@
 // LAYOUT
 
-.container{
+.container-large{
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+}
+
+.container-medium{
+  max-width: 570px;
+  margin: 0 auto;
 }

@@ -1,0 +1,58 @@
+// INTRO
+
+.intro{
+  font-family: $Raleway;
+  text-align: center;
+
+  padding-bottom: 60px;
+  padding-top: 51px;
+}
+
+.intro-heading{
+  font-size: 2.3em;
+  font-weight: $extra-light;
+  margin-bottom: 24px;
+}
+
+.intro-heading-strong{
+  display: block;
+
+  font-weight: $semi-bold;
+  letter-spacing: .7px;
+
+  padding-top: 10px;
+}
+
+.intro-baseline{
+  font-size: .8em;
+  font-weight: $semi-bold;
+
+  line-height: 1.2;
+
+  &:after{
+    @extend %line;
+  }
+}
+
+.intro-text{
+  color: $black;
+
+  font-size: .73em;
+  font-weight: $medium;
+  text-align: justify;
+
+  line-height: 1.5;
+}
+
+.intro-text-align{
+  margin-top: 26px;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .intro{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
