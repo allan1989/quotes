@@ -37,4 +37,9 @@ $(document).ready(function(){
     $('.js-site-nav-close-button').addClass('js-hidden');
   });
 
+
+
+
+  // Famous quotes slider
+
 });

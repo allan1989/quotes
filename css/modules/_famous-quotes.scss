@@ -1,0 +1,96 @@
+// FAMOUS QUOTES
+
+.famous-quotes{
+  position: relative;
+  background-color: $beige;
+}
+
+.famous-quotes-container{
+  display: flex;
+}
+
+.famous-quotes-content{
+  font-family: $Raleway;
+
+  padding-top: 81px;
+  padding-right: 116px;
+  padding-left: 62px;
+  padding-bottom: 54px;
+  width: 50%; 
+}
+
+.famous-quotes-quote{
+  font-size: 1.4em;
+  font-weight: $bold;
+
+  line-height: 1.3;
+  margin-bottom: 35px;
+}
+
+.famous-quotes-name{
+  font-size: 1.4em;
+  font-weight: $light;
+
+  margin-bottom: 34px;
+}
+
+.famous-quotes-slider-controls{
+  display: flex;
+}
+
+.famous-quotes-button{
+  border: 1px solid $black;
+  border-radius: 50px;
+
+  height: 6px;
+  margin-right: 7px;
+  width: 6px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.famous-quotes-button:last-of-type{
+  margin-right: 0;
+}
+
+.famous-quotes-button.active{
+  background-color: $grey;
+}
+
+.famous-quotes-image{
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+
+  background-color: antiquewhite;
+}
+
+@media screen and (max-width: 980px){
+
+  .famous-quotes-image{
+    display: none;
+  }
+
+  .famous-quotes-content{
+    flex-basis: 80%;
+    text-align: center;
+
+    padding: 50px 10px;
+    margin: 0 auto;
+  }
+
+  .famous-quotes-slider-controls{
+    display: flex;
+    
+    width: 50px;
+    margin: 0 auto;
+  }
+
+}
+
