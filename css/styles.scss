@@ -13,6 +13,10 @@
 @import './base/reset';
 @import './base/test';
 
+// COMMON
+
+@import './common/headings';
+
 // MODULES
 
 @import './modules/header';
@@ -20,3 +24,4 @@
 @import './modules/main-nav';
 @import './modules/intro';
 @import './modules/famous-quotes';
+@import './modules/quotes_movies';
