@@ -2,27 +2,80 @@
 
 .quotes-movies{
   padding-top: 76px;
+  padding-bottom: 64px;
 }
 
-/*
+.quotes-movies-wrapper{
+  border: 1px solid $greyBorder;
 
-ul {
-  display: table;
-  border-collapse: collapse;
-  width: 100%;
+  font-family: $Raleway;
 }
 
-li{
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
+.quotes-movies-item{
+  display: inline-block;
+
+  padding: 31px;
+  width: 50%;
 }
 
-div{
-  display: table-cell;
-  vertical-align: inherit;
-  border: 1px solid pink;
-
+.quotes-movies-title{
+  font-size: 1.17em;
+  font-weight: $bold;
+  text-transform: uppercase;
 }
 
-*/
+.quotes-movies-quote{
+  display: block;
+
+  font-size: .8em;
+  font-weight: $medium;
+  line-height: 1.6;
+
+  padding-bottom: 18px;
+  padding-top: 22px;
+}
+
+.quotes-movies-movie{
+  font-size: .78em;
+  font-weight: $regular;
+}
+
+// Borders
+
+.item-0{
+  border-right: 2px solid $greyBorder;
+  border-bottom: 2px solid $greyBorder;
+}
+
+.item-1{
+  border-bottom: 2px solid $greyBorder;
+}
+
+.item-2{
+  border-right: 2px solid $greyBorder;
+ 
+}
+
+
+@media screen and (max-width: 885px){
+  .quotes-movies{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+ @media screen and (max-width: 620px){
+
+  .quotes-movies-item{
+    width: 100%;
+  }
+
+  .item-0,
+  .item-2{
+    border-right: 0;
+  }
+
+  .item-3{
+    border-top: 2px solid $greyBorder;
+  }
+ }

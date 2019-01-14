@@ -6,6 +6,6 @@
   font-weight: $bold;
   &:after{
     @extend %line;
-    margin: 20px 0;
+    margin: 20px auto 60px 0;
   }
 }
