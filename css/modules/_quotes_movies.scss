@@ -2,11 +2,12 @@
 
 .quotes-movies{
   padding-top: 76px;
-  padding-bottom: 64px;
+  //border: 1px solid red;
 }
 
 .quotes-movies-wrapper{
   border: 1px solid $greyBorder;
+  margin-bottom: 46px;
 
   font-family: $Raleway;
 }
@@ -54,6 +55,28 @@
 .item-2{
   border-right: 2px solid $greyBorder;
  
+}
+
+// Button
+
+.quotes-movies-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.quotes-movies-button{
+  background: transparent;
+  border: 1px solid $black;
+  border-radius: 3px;
+  font-family: $Montserrat;
+  font-size: .94em;
+  font-weight: $bold;
+  text-transform: uppercase;
+  padding: .5em 1.4em;
+  &:hover{
+    cursor: pointer;
+    background: $greyBorder;
+  }
 }
 
 
