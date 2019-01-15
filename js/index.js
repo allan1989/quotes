@@ -91,4 +91,16 @@ $(document).ready(function(){
 
   })();
 
+  (function(){
+
+    var $button = $('.js-quotes-movies-button');
+
+    function changeQuotes(){
+      console.log('hello');
+    }
+
+    $button.on('click', changeQuotes);
+
+  })()
+
 });
