@@ -119,6 +119,7 @@ $(document).ready(function(){
         type: 'GET',
         dataType: 'json',
         contentType: 'application/json',
+        cache: false,
         url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies&count=4',
         headers: {
           'X-Mashape-Key': 'HcSeEUUpnLmsh8RhQECgFNgnPqy2p13OqJHjsn5ttNs3H8rwLt'
