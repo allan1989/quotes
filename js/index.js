@@ -94,12 +94,53 @@ $(document).ready(function(){
   (function(){
 
     var $button = $('.js-quotes-movies-button');
+    var $target = $('.quotes-movies-wrapper');
+    var $ajaxLoaderContainer = $('.js-ajax-loader');
 
-    function changeQuotes(){
-      console.log('hello');
+    // Fetch quotes on document load
+    fetchQuotes();
+
+    // Insert quotes into DOM
+
+    function displayQuotes(data){
+      $.each(
+        data, function(index, value){
+          $target.append(
+          '<li class="quotes-movies-item item-' + index + 
+          '"><h3 class="quotes-movies-title">' + value.author +
+          '</h3><q class="quotes-movies-quote">' + value.quote + '</q></li>'
+          )
+        }
+      );
     }
 
-    $button.on('click', changeQuotes);
+    function fetchQuotes(){
+      $.ajax({
+        type: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies&count=4',
+        headers: {
+          'X-Mashape-Key': 'HcSeEUUpnLmsh8RhQECgFNgnPqy2p13OqJHjsn5ttNs3H8rwLt'
+        },
+        beforeSend: function(){
+          $ajaxLoaderContainer.show();
+        },
+        complete: function(){
+          $ajaxLoaderContainer.hide();
+        },
+        success: function(data){
+          $target.empty();
+          displayQuotes($(data));
+        },
+        error: function(error){
+          $target.append('<li class="ajax-loader">Oops, there seems to be an error</li>');
+          console.log(error);
+        }
+      })
+    }
+
+    $button.on('click', fetchQuotes);
 
   })()
 
