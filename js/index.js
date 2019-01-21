@@ -143,6 +143,40 @@ $(document).ready(function(){
 
     $button.on('click', fetchQuotes);
 
-  })()
+  })();
+
+  (function(){
+
+    // DOM Elements
+    $target = $('.quote-daily');
+    $ajaxLoaderContainer = $('.js-quote-daily-loader');
+
+    function getDailyQuote(){
+      $.ajax({
+        type: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        cache: false,
+        url: 'https://quotes.rest/qod',
+        beforeSend: function(){
+          $ajaxLoaderContainer.show();
+        },
+        complete: function(){
+          $ajaxLoaderContainer.hide();
+        },
+        success: function(data){
+          $target.empty();
+          console.log(data);
+        },
+        error: function(error){
+          //$target.append('<li class="ajax-loader">Oops, there seems to be an error</li>');
+          console.log(error);
+        }
+      })
+    }
+
+    getDailyQuote();
+
+  })();
 
 });
