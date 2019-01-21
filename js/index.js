@@ -151,13 +151,18 @@ $(document).ready(function(){
     $target = $('.quote-daily');
     $ajaxLoaderContainer = $('.js-quote-daily-loader');
 
+    function displayQuotes(data){
+      var $quote = data[0].quote.body;
+      $target.text($quote);
+    }
+
     function getDailyQuote(){
       $.ajax({
         type: 'GET',
         dataType: 'json',
         contentType: 'application/json',
         cache: false,
-        url: 'https://quotes.rest/qod',
+        url: 'https://favqs.com/api/qotd',
         beforeSend: function(){
           $ajaxLoaderContainer.show();
         },
@@ -166,10 +171,10 @@ $(document).ready(function(){
         },
         success: function(data){
           $target.empty();
-          console.log(data);
+          displayQuotes($(data));
         },
         error: function(error){
-          //$target.append('<li class="ajax-loader">Oops, there seems to be an error</li>');
+          $target.append('<li class="ajax-loader">Oops, there seems to be an error</li>');
           console.log(error);
         }
       })
