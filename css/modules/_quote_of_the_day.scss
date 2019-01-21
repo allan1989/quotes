@@ -1,13 +1,43 @@
 // Quote of the day
 
-.quotes-daily-section{
+.quote-daily-section{
   font-family: $Raleway;
+  text-align: center;
+
+  color: $white;
+  
+  margin-top: 140px;
+}
+
+.quote-daily-inner{
+  background-image: url('.././../quotes/img/quote-of-the-day.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 110px 216px 150px;
 }
 
 .quote-daily{
+  font-size: $_16 * 2;
   font-weight: $bold;
+  line-height: 1.2;
 }
 
 .quote-daily-source{
+  font-size: .6em;
   font-weight: $regular;
+
+  padding-top: 80px;
+}
+
+.quote-daily-source-link{
+  color: currentColor;
+}
+
+@media screen and (max-width: 768px){
+
+  .quote-daily-inner{
+    padding: 110px calc(2%) 150px;
+  }
+
 }
