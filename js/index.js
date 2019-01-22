@@ -25,6 +25,11 @@ $(document).ready(function(){
     });
 
   })();
+
+
+
+
+  
   
 
   (function(){
@@ -91,6 +96,11 @@ $(document).ready(function(){
 
   })();
 
+
+
+
+
+
   (function(){
 
     var $button = $('.js-quotes-movies-button');
@@ -144,6 +154,11 @@ $(document).ready(function(){
     $button.on('click', fetchQuotes);
 
   })();
+
+
+
+
+
 
   (function(){
 
