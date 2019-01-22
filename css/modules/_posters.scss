@@ -1,1 +1,46 @@
 // Posters
+
+.posters-inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.posters-wrapper{
+  padding: 20px 62px;
+}
+
+.posters-image{
+  width: 100%;
+}
+
+.posters-image--small{
+  width: 20%;
+}
+
+.posters-extra{
+  display: none;
+}
+
+.posters-content-left{
+  border: 1px solid red;
+  width: 40%;
+}
+
+.posters-content-right{
+  border: 1px solid blue;
+  width: 53%;
+}
+
+.posters-content-right-top{
+  margin-bottom: 30px;
+}
+
+.posters-content-right-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.posters-content-right-bottom-one,
+.posters-content-right-bottom-two{
+  width: 44%;
+}
