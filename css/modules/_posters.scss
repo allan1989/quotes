@@ -13,12 +13,15 @@
   width: 100%;
 }
 
-.posters-image--small{
-  width: 20%;
+// Show extra on hover
+.posters-content-show-extra{
+  position: relative;
 }
 
 .posters-extra{
-  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .posters-content-left{
