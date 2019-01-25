@@ -16,15 +16,23 @@
 // Show extra on hover
 .posters-content-show-extra{
   position: relative;
+  overflow: hidden;
+  
+  &:hover .posters-extra{
+    transition: bottom .2s ease;
+    bottom: 10px;
+  }
+  
 }
 
 .posters-extra{
   position: absolute;
-  bottom: 10px;
+  bottom: -20px;
   left: 0;
   right: 0;
 
   padding: 0 10px;
+  transition: bottom .2s ease;
 
   display: flex;
   justify-content: space-between;
@@ -35,12 +43,10 @@
 }
 
 .arrow{
- 
-    width: 30px;
-    height: 20px;
-    background-image: url('.././../quotes/img/arrow.png');
-    border: 1px solid red;
-  
+  width: 30px;
+  height: 20px;
+  background-image: url('.././../quotes/img/arrow.png');
+  border: 1px solid red;
 }
 
 .posters-content-left{
