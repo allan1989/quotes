@@ -20,7 +20,7 @@
   
   &:hover .posters-extra{
     transition: bottom .2s ease;
-    bottom: 10px;
+    bottom: 20px;
   }
   
 }
@@ -31,7 +31,7 @@
   left: 0;
   right: 0;
 
-  padding: 0 10px;
+  padding: 0 50px 0 20px;
   transition: bottom .2s ease;
 
   display: flex;
@@ -40,13 +40,43 @@
 
 .posters-extra-link{
   color: $white;
+
+  font-family: $Montserrat;
+  font-weight: $bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.posters-extra-link-buy{
+  font-size: .8em;
+  letter-spacing: 2px;
+}
+
+.posters-extra-link-share{
+  font-size: 0.6em;
+  letter-spacing: 2px;
+}
+
+.posters-extra-share{
+  position: relative;
 }
 
 .arrow{
-  width: 30px;
+  display: inline-block;
+  width: 22px;
   height: 20px;
+
+  position: absolute;
+  top: 0;
+  right: -30px;
+
   background-image: url('.././../quotes/img/arrow.png');
-  border: 1px solid red;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .posters-content-left{
