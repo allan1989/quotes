@@ -35,16 +35,23 @@ $(document).ready(function(){
   (function(){
 
     // Main Menu
+
     $('.js-site-nav-menu-button').on('click', function(){
+      var $this = $(this);
+      $this.toggleClass('closed open');
+    })
 
-      $('.js-site-nav-close-button, .js-site-nav').removeClass('js-hidden');
+
+    // $('.js-site-nav-menu-button').on('click', function(){
+
+    //   $('.js-site-nav-close-button, .js-site-nav').removeClass('js-hidden');
     
-    });
+    // });
 
-    $('.js-site-nav-close-button').on('click', function(){
-      $('.js-site-nav').addClass('js-hidden');
-      $('.js-site-nav-close-button').addClass('js-hidden');
-    });
+    // $('.js-site-nav-close-button').on('click', function(){
+    //   $('.js-site-nav').addClass('js-hidden');
+    //   $('.js-site-nav-close-button').addClass('js-hidden');
+    // });
 
   })();
 

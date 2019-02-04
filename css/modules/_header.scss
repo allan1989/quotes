@@ -22,27 +22,6 @@
   text-transform: uppercase;
 }
 
-.site-nav-menu-button{
-  color: $white;
-
-  font-family: $Montserrat;
-  font-size: .60em;
-  font-weight: $bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  align-self: flex-start;
-  margin: 4px 4px 0 0;
-  padding: 4px 0;
-
-  border-top: 3px solid currentColor;
-  border-bottom: 3px solid currentColor;
-
-  &:hover{
-    cursor: pointer;
-  }
-}
-
 .site-hero{
   color: $white;
 

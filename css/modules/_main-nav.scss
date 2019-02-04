@@ -1,6 +1,24 @@
 // MAIN NAV
 
+/*
+
+@Extend placeholder %menu-icons
+
+  %menu-icons{
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 23px;
+    margin-top: 4px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  };
+
+*/
+
 .site-nav{
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -10,10 +28,6 @@
   background-color: rgba(34, 34, 34, .9);
 
   padding: 7em 0 0 11.8em;
-}
-
-.site-nav.js-hidden{
-  display: none;
 }
 
 .site-nav-list{
@@ -42,46 +56,36 @@
   }
 }
 
-.site-nav-close-button{
+.site-nav-menu-button{
   color: $white;
 
   font-family: $Montserrat;
-  font-size: .5em;
   font-weight: $bold;
   text-transform: uppercase;
 
-  position: absolute;
-  top: 25px;
-  right: 130px;
-
-  z-index: 1;
-
-  &:before{
-    content: '';
-    display: block;
-    height: 25px;
-    padding-bottom: 5px;
-    width: 25px;
-    
-    background-image: url('.././../quotes/img/icons/menu-close.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+  z-index: 1;  
 
   &:hover{
     cursor: pointer;
   }
 }
 
-.site-nav-close-button.js-hidden{
-  display: none;
-}
+.site-nav-menu-button.closed{
+  &:before{
+    @extend %menu-icons;
 
-@media screen and (max-width: 768px){
-  .site-nav-close-button{
-    right: 20px;
-  }
-}
+    background-image: url('.././../quotes/img/icons/menu-open.png');
+  };
+};
+
+.site-nav-menu-button.open{
+  &:before{
+    @extend %menu-icons;
+
+    background-image: url('.././../quotes/img/icons/menu-close.png');
+  };
+};
+
 
 @media screen and (max-width: 600px){
   .site-nav{

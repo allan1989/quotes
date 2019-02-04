@@ -9,4 +9,15 @@
   margin: 26px auto 38px auto;
 
   background-color: $black;
-}
+};
+
+%menu-icons{
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 23px;
+  margin-top: 4px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+};
