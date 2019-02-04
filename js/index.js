@@ -38,6 +38,7 @@ $(document).ready(function(){
 
     $('.js-site-nav-menu-button').on('click', function(){
 
+      // DOM Elements
       var $this = $(this);
       var $menu = $('.js-site-nav');
 
