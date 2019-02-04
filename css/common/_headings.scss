@@ -1,5 +1,22 @@
 // Headings
 
+/*
+
+  Extend placeholder %line
+
+  %line{
+    content: '';
+    display: block;
+    
+    height: 2px;
+    width: 50px;
+    margin: 26px auto 38px auto;
+
+    background-color: $black;
+  };
+
+*/
+
 .headingH2{
   font-family: $Raleway;
   font-size: 2.35em;
