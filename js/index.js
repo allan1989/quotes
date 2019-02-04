@@ -37,21 +37,21 @@ $(document).ready(function(){
     // Main Menu
 
     $('.js-site-nav-menu-button').on('click', function(){
+
       var $this = $(this);
+      var $menu = $('.js-site-nav');
+
       $this.toggleClass('closed open');
+
+      if($this.hasClass('open')){
+        $menu.show();
+      }else{
+        $menu.hide();
+      }
+
     })
 
 
-    // $('.js-site-nav-menu-button').on('click', function(){
-
-    //   $('.js-site-nav-close-button, .js-site-nav').removeClass('js-hidden');
-    
-    // });
-
-    // $('.js-site-nav-close-button').on('click', function(){
-    //   $('.js-site-nav').addClass('js-hidden');
-    //   $('.js-site-nav-close-button').addClass('js-hidden');
-    // });
 
   })();
 
