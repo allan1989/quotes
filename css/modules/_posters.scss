@@ -70,6 +70,19 @@
   letter-spacing: .8px;
 }
 
+.posters-content-text-three{
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -12%);
+
+  font-family: $GreatLakesNF;
+  font-size: 1.2em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .posters-content-text-author{
   display: block;
   margin-top: 6px;
