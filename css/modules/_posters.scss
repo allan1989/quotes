@@ -39,7 +39,6 @@
 }
 
 .posters-content-text-one{
-  border: 1px solid green;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,6 +53,28 @@
   line-height: 1.3;
   text-align: center;
   text-transform: uppercase;
+}
+
+.posters-content-text-two{
+  position: absolute;
+  top: 47px;
+  left: 51px;
+
+  line-height: 1.4;
+}
+
+.posters-content-text-two-quote{
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: .8px;
+}
+
+.posters-content-text-author{
+  display: block;
+  margin-top: 6px;
+
+  font-size: .85em;
 }
 
 .posters-extra-link{
