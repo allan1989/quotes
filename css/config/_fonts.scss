@@ -6,12 +6,38 @@ $Lato: 'Lato', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
 $GreatLakesNF : 'greatlakesnfregular', sans-serif;
 $Raleway: 'Raleway', sans-serif;
+$TW: 'Tw Cen MT Condensed', sans-serif;
+$TW2: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+$TW3: 'Tw Cen MT Bold', sans-serif;
 
 @font-face {
   font-family: 'greatlakesnfregular';
   src: url('../../fonts/GREALN__-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tw Cen MT Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tw Cen MT Condensed'), url('TCCM____.woff') format('woff');
+}
+  
+  
+  @font-face {
+  font-family: 'Tw Cen MT Condensed Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
+}
+  
+  
+  @font-face {
+  font-family: 'Tw Cen MT Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tw Cen MT Bold'), url('TCB_____.woff') format('woff');
 }
 
 // Font Sizes
