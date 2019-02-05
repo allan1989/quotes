@@ -66,21 +66,48 @@
 .posters-content-text-two-quote{
   font-size: 1.3em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: $semi-bold;
   letter-spacing: .8px;
 }
 
 .posters-content-text-three{
   position: absolute;
-  top: 12%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -12%);
+  transform: translate(-50%, -10%);
 
   font-family: $GreatLakesNF;
   font-size: 1.2em;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
+}
+
+.posters-content-text-four{
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+
+  color: $white;
+
+  font-family: $Lato;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.posters-content-text-four-top{ 
+  display: block;
+  margin-bottom: 4px;
+  
+  font-weight: $bold;
+}
+
+.posters-content-text-four-bottom{
+  display: block;
+
+  font-weight: $max-bold;
 }
 
 .posters-content-text-author{
