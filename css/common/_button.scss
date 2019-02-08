@@ -1,0 +1,29 @@
+// Button
+
+.call-to-action{
+  display: flex;
+}
+
+.call-to-action-center{
+  justify-content: center;
+}
+
+.call-to-action-button{
+  background: transparent;
+  border: 1px solid $black;
+  border-radius: 3px;
+
+  font-family: $Montserrat;
+  font-size: .74em;
+  font-weight: $bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  padding: .7em 1.4em;
+  width: 175px;
+
+  &:hover{
+    cursor: pointer;
+    background: $greyBorder;
+  }
+}

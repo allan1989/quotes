@@ -59,31 +59,6 @@
  
 }
 
-// Button
-
-.quotes-movies-bottom{
-  display: flex;
-  justify-content: center;
-}
-
-.quotes-movies-button{
-  background: transparent;
-  border: 1px solid $black;
-  border-radius: 3px;
-
-  font-family: $Montserrat;
-  font-size: .94em;
-  font-weight: $bold;
-  text-transform: uppercase;
-
-  padding: .5em 1.4em;
-
-  &:hover{
-    cursor: pointer;
-    background: $greyBorder;
-  }
-}
-
 @media screen and (max-width: 885px){
 
   .quotes-movies{
