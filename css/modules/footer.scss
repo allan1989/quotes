@@ -1,0 +1,74 @@
+// Footer
+
+// Footer Top
+
+.footer{
+  font-family: $Montserrat;
+  padding-top: 77px;
+}
+
+.secondary-menu{
+  display: flex;
+}
+
+.secondary-menu-block{
+  //line-height: 1;
+}
+
+.secondary-menu-list-wrapper{
+  line-height: 1.3;
+}
+
+.block-browse{
+  width: 20%;
+}
+
+.block-shop{
+  width: 26%;
+}
+
+.block-contact{
+  width: 30%;
+}
+
+.block-subscribe{
+  flex-grow: .9;
+  width: 20%;
+}
+
+.secondary-menu-text{
+  color: currentColor;
+  font-size: .66em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.secondary-menu-address{
+  line-height: 2;
+}
+
+.no-underline{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.block-subscribe-input{
+  margin-bottom: 18px;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.block-subscribe-button{
+
+}
+
+
+// Footer Bottom
+
+.footer-top{
+  margin-bottom: 150px;
+}
