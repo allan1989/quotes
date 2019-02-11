@@ -6,6 +6,8 @@
 }
 
 .famous-quotes-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -34,6 +36,8 @@
 }
 
 .famous-quotes-slider-controls{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -79,7 +83,8 @@
   }
 
   .famous-quotes-content{
-    flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
     text-align: center;
 
     padding: 50px 10px;
@@ -87,6 +92,8 @@
   }
 
   .famous-quotes-slider-controls{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
     width: 50px;

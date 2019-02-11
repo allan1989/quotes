@@ -37,8 +37,10 @@
 }
 
 .site-nav-link{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   color: $white;
   opacity: .3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 
   font-family: $Montserrat;
   font-size: 2em;
@@ -47,10 +49,13 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  -webkit-transition: all .500s ease;
+
   transition: all .500s ease;
 
   &:hover{
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 
     text-decoration: underline;
   }

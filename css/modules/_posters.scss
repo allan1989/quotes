@@ -1,8 +1,12 @@
 // Posters
 
 .posters-inner{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 55px;
 }
 
@@ -28,10 +32,17 @@
   right: 0;
 
   padding: 0 50px 0 20px;
+  -webkit-transition: bottom .2s ease;
   transition: bottom .2s ease;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 // Show extra on hover
@@ -40,6 +51,7 @@
   overflow: hidden;
   
   &:hover .posters-extra{
+    -webkit-transition: bottom .2s ease;
     transition: bottom .2s ease;
     bottom: 20px;
   }
@@ -52,7 +64,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate((-50%, -50%));
+  -webkit-transform: translate((-50%, -50%));
+          transform: translate((-50%, -50%));
 
   color: $white;
 
@@ -84,7 +97,8 @@
   position: absolute;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -10%);
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
 
   font-family: $GreatLakesNF;
   font-size: 1.2em;
@@ -97,7 +111,8 @@
   position: absolute;
   top: 58%;
   left: 50%;
-  transform: translate(-50%, -58%);
+  -webkit-transform: translate(-50%, -58%);
+          transform: translate(-50%, -58%);
 
   color: $white;
 
@@ -184,8 +199,12 @@
 }
 
 .posters-content-right-bottom{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .posters-content-right-bottom-one,
@@ -200,8 +219,14 @@
   }
 
   .posters-inner{
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
 
   .posters-extra{
@@ -229,7 +254,10 @@
 @media screen and (max-width: 468px){
 
   .posters-content-right-bottom{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
 }

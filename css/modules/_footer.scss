@@ -8,6 +8,8 @@
 }
 
 .secondary-menu{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -28,7 +30,9 @@
 }
 
 .block-subscribe{
-  flex-grow: .9;
+  -webkit-box-flex: .9;
+      -ms-flex-positive: .9;
+          flex-grow: .9;
   width: 20%;
 }
 
@@ -82,8 +86,12 @@
 }
 
 .footer-bottom-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   font-weight: $bold;
 
@@ -91,6 +99,8 @@
 }
 
 .footer-bottom-social-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -105,11 +115,14 @@
 
 .footer-bottom-social-image{
   width: 100%;
-  filter: grayscale(100%);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .footer-bottom-social-link:hover .footer-bottom-social-image{
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .footer-bottom-copyright{
@@ -122,8 +135,14 @@
 @media screen and (max-width: 890px){
 
   .secondary-menu{
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
 
   .block-browse,
@@ -143,8 +162,14 @@
 @media screen and (max-width: 740px){
 
   .footer-bottom-content{
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
 
   .footer-bottom-copyright{
