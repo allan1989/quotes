@@ -79,7 +79,7 @@
   &:before{
     @extend %menu-icons;
 
-    background-image: url('.././../quotes/img/icons/menu-open.png');
+    background-image: url('.././../img/icons/menu-open.png');
   };
 };
 
@@ -87,7 +87,7 @@
   &:before{
     @extend %menu-icons;
 
-    background-image: url('.././../quotes/img/icons/menu-close.png');
+    background-image: url('.././../img/icons/menu-close.png');
   };
 };
 

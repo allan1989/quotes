@@ -248,7 +248,7 @@ table {
   background-color: #ffffff; }
 
 .slider-img {
-  background-image: url(".././../quotes/img/header-slider/pic-0.jpg");
+  background-image: url(".././../img/header-slider/pic-0.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -310,10 +310,10 @@ table {
     cursor: pointer; }
 
 .site-nav-menu-button.closed:before {
-  background-image: url(".././../quotes/img/icons/menu-open.png"); }
+  background-image: url(".././../img/icons/menu-open.png"); }
 
 .site-nav-menu-button.open:before {
-  background-image: url(".././../quotes/img/icons/menu-close.png"); }
+  background-image: url(".././../img/icons/menu-close.png"); }
 
 @media screen and (max-width: 600px) {
   .site-nav {
@@ -505,7 +505,7 @@ table {
   margin-top: 140px; }
 
 .quote-daily-inner {
-  background-image: url(".././../quotes/img/quote-of-the-day.jpg");
+  background-image: url(".././../img/quote-of-the-day.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 110px 216px 150px; }
@@ -661,7 +661,7 @@ table {
   position: absolute;
   top: 0;
   right: -30px;
-  background-image: url(".././../quotes/img/arrow.png");
+  background-image: url(".././../img/arrow.png");
   background-size: 100%;
   background-repeat: no-repeat; }
 
