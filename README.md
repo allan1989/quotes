@@ -1,8 +1,10 @@
 # Quotes
 Quotes is a free PSD template.
 
+This template can be found [here](https://www.graphicsfuel.com/2016/02/quotes-free-psd-website-template/).
+
 ## Mission
-Improve my CSS skills (such as methodology, code architecture, pixel perfect integration).
+Improve CSS skills (such as methodology, code architecture, pixel perfect integration).
 
 Load and display data via AJAX
 
