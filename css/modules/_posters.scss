@@ -7,7 +7,14 @@
 }
 
 .posters-wrapper{
+  position: relative;
+
   padding: 20px 62px 76px 62px;
+
+  background: #ffffff;
+  background: linear-gradient(#ffffff 0%, #eaeef1 100%);
+  background: -webkit-linear-gradient(#ffffff 0%, #eaeef1 100%);
+  background: -moz-linear-gradient(#ffffff 0%, #eaeef1 100%);
 }
 
 .posters-image{
@@ -201,12 +208,21 @@
     bottom: 20px;
   }
 
-  .posters-content-left,
-  .posters-content-right,
+
   .posters-content-right-bottom-one,
   .posters-content-right-bottom-two{
     width: 100%;
   } 
+
+}
+
+@media screen and (max-width: 600px){
+
+  .posters-content-left,
+  .posters-content-right{
+    width: 100%;
+  }
+
 
 }
 
