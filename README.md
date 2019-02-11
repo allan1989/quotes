@@ -10,3 +10,8 @@ Load and display data via AJAX
 
 ### Tools used:
 [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=fr)
+
+[Pleeease Play](http://pleeease.io/play/)
+
+### Browser compatibility
+Tested on the lastest versions of Firefox, Chrome, Edge and Internet Explorer 11.
